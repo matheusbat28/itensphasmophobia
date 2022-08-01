@@ -20,15 +20,15 @@ class Index(QMainWindow, Ui_mainWindow):
         while True:
             if playerLucas == playerMarcos:
                 playerMarcos = sample(list_items, 1)
-            if playerLucas == playerIgor:
+            elif playerLucas == playerIgor:
                 playerIgor = sample(list_items, 1)
-            if playerLucas == playerMatheus:
+            elif playerLucas == playerMatheus:
                 playerMatheus = sample(list_items, 1)
-            if playerMarcos == playerIgor:
+            elif playerMarcos == playerIgor:
                 playerIgor = sample(list_items, 1)
-            if playerMarcos == playerMatheus:
+            elif playerMarcos == playerMatheus:
                 playerMatheus = sample(list_items, 1)
-            if playerIgor == playerMatheus:
+            elif playerIgor == playerMatheus:
                 playerMatheus = sample(list_items, 1)
             else:
                 break
