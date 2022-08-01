@@ -59,8 +59,10 @@ class Index(QMainWindow, Ui_mainWindow):
         self.check(list_items)
         if len(list_items) == 0:
             QMessageBox.critical(self,'ops!! erro', 'nenhum item foi selecionado')
+            self.limpar()
         elif len(list_items) < 4:
             QMessageBox.critical(self,'ops!! erro', 'seleciona no minimo 4 itens')
+            self.limpar()
         else:
             self.different_items(list_items)
 
