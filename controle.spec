@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['controle.py'],
+    ['src\\controle.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -41,5 +41,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='D:\\project\\python\\itens\\image\\icon.png',
 )
